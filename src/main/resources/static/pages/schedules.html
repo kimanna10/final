@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html;">
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/pages/clients.html">Clients</a></li>
+        <li><a href="/pages/notes.html">Notes</a></li>
+        <li><a href="/pages/styles.html">Styles</a></li>
+        <li><a href="/pages/choreographers.html">Choreographers</a></li>
+        <li><a href="/pages/teams.html">Teams</a></li>
+        <li><a href="/pages/rooms.html">Rooms</a></li>
+        <li><a class="active" href="/pages/schedules.html">Schedule</a></li>
+    </ul>
+</nav>
+<div style="margin-left:15%;padding:10px 25px;height:100%;">
+    <h1>Schedule Page</h1>
+    <h2>Please use needed option.</h2>
+    <p><b>Schedule</b> - Create new schedule, view all, update, delete, find schedules from database</p>
+    <div>
+        <h3>Add schedule Form</h3>
+        <form action="/schedule/create" method="get">
+            <label for="day1">Day1</label>
+            <select id="day1" name="day1">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <label for="day2">Day2</label>
+            <select id="day2" name="day2">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <label for="day3">Day3</label>
+            <select id="day3" name="day3">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <label for="time1">Time1</label>
+            <select id="time1" name="time1">
+                <option value="13:00-14:00">13:00-14:00</option>
+                <option value="14:00-15:00">14:00-15:00</option>
+                <option value="15:00-16:00">15:00-16:00</option>
+                <option value="16:00-17:00">16:00-17:00</option>
+                <option value="17:00-18:00">17:00-18:00</option>
+                <option value="18:00-19:00">18:00-19:00</option>
+                <option value="19:00-20:00">19:00-20:00</option>
+                <option value="20:00-21:00">20:00-21:00</option>
+            </select>
+            <label for="time2">Time2</label>
+            <select id="time2" name="time2">
+                <option value="13:00-14:00">13:00-14:00</option>
+                <option value="14:00-15:00">14:00-15:00</option>
+                <option value="15:00-16:00">15:00-16:00</option>
+                <option value="16:00-17:00">16:00-17:00</option>
+                <option value="17:00-18:00">17:00-18:00</option>
+                <option value="18:00-19:00">18:00-19:00</option>
+                <option value="19:00-20:00">19:00-20:00</option>
+                <option value="20:00-21:00">20:00-21:00</option>
+            </select>
+            <label for="time3">Time3</label>
+            <select id="time3" name="time3">
+                <option value="13:00-14:00">13:00-14:00</option>
+                <option value="14:00-15:00">14:00-15:00</option>
+                <option value="15:00-16:00">15:00-16:00</option>
+                <option value="16:00-17:00">16:00-17:00</option>
+                <option value="17:00-18:00">17:00-18:00</option>
+                <option value="18:00-19:00">18:00-19:00</option>
+                <option value="19:00-20:00">19:00-20:00</option>
+                <option value="20:00-21:00">20:00-21:00</option>
+            </select>
+            <label for="room_id">Room</label>
+            <input type="text" id="room_id" name="room_id" placeholder="Room">
+            <label for="team_id">Team</label>
+            <input type="text" id="team_id" name="team_id" placeholder="Team">
+
+
+
+            <input type="submit" value="Submit">
+        </form>
+
+
+    </div>
+
+    <!--    <div>-->
+    <!--        <h3>Update client Form</h3>-->
+    <!--        <form action="/client/update/" method="get">-->
+    <!--            <label for="fname">Username</label>-->
+    <!--            <input type="text" id="fname" name="username" placeholder="Your name...">-->
+
+    <!--            <label for="lname">Password</label>-->
+    <!--            <input type="text" id="lname" name="password" placeholder="Your password...">-->
+    <!--            -->
+    <!--            <input type="submit" value="Update">-->
+    <!--        </form>-->
+    <!--    </div>-->
+
+    <div>
+        <h3>All schedules Form</h3>
+        <form action="/schedule/all" method="get">
+            <input type="submit" value="View">
+        </form>
+    </div>
+</div>
+</body>
+</html>

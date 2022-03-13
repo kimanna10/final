@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html;">
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/pages/clients.html">Clients</a></li>
+        <li><a href="/pages/notes.html">Notes</a></li>
+        <li><a href="/pages/styles.html">Styles</a></li>
+        <li><a class="active" href="/pages/choreographers.html">Choreographers</a></li>
+        <li><a href="/pages/teams.html">Teams</a></li>
+        <li><a href="/pages/rooms.html">Rooms</a></li>
+        <li><a href="/pages/schedules.html">Schedule</a></li>
+    </ul>
+</nav>
+<div style="margin-left:15%;padding:10px 25px;height:100%;">
+    <h1>Choreographers Page</h1>
+    <h2>Please use needed option.</h2>
+    <p><b>Choreographers</b> - Create new choreographer, view all, update, delete, find choreographers from database</p>
+    <div>
+        <h3>Add choreographer Form</h3>
+        <form action="/choreo/create" method="get">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Name...">
+
+            <input type="submit" value="Submit">
+        </form>
+
+
+    </div>
+
+    <!--    <div>-->
+    <!--        <h3>Update client Form</h3>-->
+    <!--        <form action="/client/update/" method="get">-->
+    <!--            <label for="fname">Username</label>-->
+    <!--            <input type="text" id="fname" name="username" placeholder="Your name...">-->
+
+    <!--            <label for="lname">Password</label>-->
+    <!--            <input type="text" id="lname" name="password" placeholder="Your password...">-->
+    <!--            -->
+    <!--            <input type="submit" value="Update">-->
+    <!--        </form>-->
+    <!--    </div>-->
+
+    <div>
+        <h3>All choreographers Form</h3>
+        <form action="/choreo/all" method="get">
+            <input type="submit" value="View">
+        </form>
+    </div>
+</div>
+</body>
+</html>
