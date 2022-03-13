@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html;">
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a href="/pages/clients.html">Clients</a></li>
+        <li><a href="/pages/notes.html">Notes</a></li>
+        <li><a href="/pages/styles.html">Styles</a></li>
+        <li><a href="/pages/choreographers.html">Choreographers</a></li>
+        <li><a href="/pages/teams.html">Teams</a></li>
+    </ul>
+</nav>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <h1>Clients Page</h1>
+    <h2>Please use needed option.</h2>
+    <p><b>Clients</b> - Create new user, view all, update, delete, find clients from database</p>
+
+
+        <div>
+            <h3>All clients Form</h3>
+            <span>Hello, <th:block th:text="${name}">[name]</th:block></span>
+
+
+        </div>
+</div>
+</body>
+</html>
